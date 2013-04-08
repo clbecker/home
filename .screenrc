@@ -1,0 +1,9 @@
+defscrollback 10000
+hardstatus on
+hardstatus alwayslastline
+
+bind x
+bind ^X
+
+hardstatus string "%{.bW}%-w%{.rW}%f%n %t%{-}%+w %=%{..G}[%H %l] %{..Y} %m/%d %c "
+
