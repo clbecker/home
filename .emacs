@@ -8,13 +8,19 @@
 
 ;; 2012-06
 ;; javascript mode
-(autoload 'js2-mode "js2" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
+;;http://steve-yegge.blogspot.co.nz/2008_03_01_archive.html
+(autoload 'js2-mode "js2-mode.el" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(setq js2-use-font-lock-faces t)
+(custom-set-variables  
+ '(js2-basic-offset 2)  
+ '(js2-bounce-indent-p t)  
+)
 
 ;; 2012-06 smart tabs
 ;(require 'smarttabs)
-(require 'smart-tabs-mode)
+;(require 'smart-tabs-mode)
 ;(smart-tabs-advice js2-indent-line js2-basic-offset)
 
 
@@ -145,8 +151,8 @@
 ; turn on syntax highlighting
 (when (fboundp 'global-font-lock-mode) (global-font-lock-mode t))
 
-(set-face-background 'modeline "red")   ; bottom bar text
-(set-face-foreground 'modeline "black") 
+(set-face-background 'mode-line "red")   ; bottom bar text
+(set-face-foreground 'mode-line "black") 
 
 
 (set-foreground-color "cyan")
