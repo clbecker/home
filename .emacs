@@ -221,7 +221,7 @@
 
 ;; perl environment
 (add-to-list 'auto-mode-alist
-                   '("\\.\\([pP][Llm]\\|al\\|mhtml\\|mh\\|md\\|t\\|js\\)\\'" . cperl-mode))
+                   '("\\.\\([pP][Llm]\\|al\\|mhtml\\|mh\\|md\\|t\\)\\'" . cperl-mode))
 (add-to-list 'auto-mode-alist '("autohandler" . cperl-mode))
 (add-to-list 'auto-mode-alist '("dhandler" . cperl-mode))
 
